@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAYFAIR ENCRYPTION</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="pc__container">
+      <div class="pc__heading">
+        <h1>PLAYFAIR CIPHER</h1>
+      </div>
+      <div class="pc__desc">
+        <span style="display: block; margin-bottom: 1.125rem"
+          >From Wikipedia -</span
+        >
+        The Playfair cipher or Playfair square or Wheatstone–Playfair cipher is
+        a manual symmetric encryption technique and was the first literal digram
+        substitution cipher. The scheme was invented in 1854 by Charles
+        Wheatstone, but bears the name of Lord Playfair for promoting its use.
+        The technique encrypts pairs of letters (bigrams or digrams), instead of
+        single letters as in the simple substitution cipher and rather more
+        complex Vigenère cipher systems then in use. The Playfair is thus
+        significantly harder to break since the frequency analysis used for
+        simple substitution ciphers does not work with it. The frequency
+        analysis of bigrams is possible, but considerably more difficult. With
+        600[1] possible bigrams rather than the 26 possible monograms (single
+        symbols, usually letters in this context), a considerably larger cipher
+        text is required in order to be useful.
+      </div>
+      <div class="pc__plaintext">
+        <label for="plaintext">Plain Text</label>
+        <textarea name="plaintext" id="plaintext"></textarea>
+      </div>
+      <div class="pc__keyword">
+        <label for="keyword">Playfair Keyword</label>
+        <input type="text" name="keyword" id="keyword" />
+      </div>
+
+      <p style="margin-bottom: 1.125rem">Playfair Matrix :</p>
+      <table class="pc__matrix">
+        <tr>
+          <td>a</td>
+          <td>b</td>
+          <td>c</td>
+          <td>d</td>
+          <td>e</td>
+        </tr>
+        <tr>
+          <td>f</td>
+          <td>g</td>
+          <td>h</td>
+          <td>i</td>
+          <td>j</td>
+        </tr>
+        <tr>
+          <td>k</td>
+          <td>l</td>
+          <td>m</td>
+          <td>n</td>
+          <td>o</td>
+        </tr>
+        <tr>
+          <td>p</td>
+          <td>q</td>
+          <td>r</td>
+          <td>s</td>
+          <td>t</td>
+        </tr>
+        <tr>
+          <td>u</td>
+          <td>v</td>
+          <td>w</td>
+          <td>x</td>
+          <td>y</td>
+        </tr>
+      </table>
+
+      <div class="pc__encrypted--text">
+        Encrypted Text : <span class="transformed-text"></span>
+      </div>
+      <button class="pc__encrypt--btn">Encrypt</button>
+    </div>
+  </body>
+</html>
