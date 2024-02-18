@@ -1,4 +1,1 @@
-# playfair_encryption
-# playfair_encryption
-# playfair_cipher
-# playfair_cipher
+# playfair_encryption : [https://miyaadshahjoy.github.io/playfair_encryption/](https://miyaadshahjoy.github.io/playfair_encryption/)
